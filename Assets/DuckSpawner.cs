@@ -14,7 +14,7 @@ public class DuckSpawner : MonoBehaviour
     }
     void Start()
     {
-        InvokeRepeating(nameof(SpawnDuck), 5, 5);
+        InvokeRepeating(nameof(SpawnDuck), 0.5f, 0.5f);
     }
 
     // Update is called once per frame
