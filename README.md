@@ -11,4 +11,4 @@ A simple Duck Clicking Game that is made in unity. This is my first attempt of l
   
   Only current issue is releasing the exe so that others can play the game
   
-[!image](https://user-images.githubusercontent.com/90732327/212202251-0c49c7ff-b4ff-4e87-8a47-77548a22bb04.png)
+![image](https://user-images.githubusercontent.com/90732327/212202251-0c49c7ff-b4ff-4e87-8a47-77548a22bb04.png)
