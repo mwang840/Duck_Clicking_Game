@@ -4,7 +4,7 @@ A simple Duck Clicking Game that is made in unity. This is my first attempt of l
 <ul>
   <li>Ducks which spawn at (0, 0) and travel different speeds</li>
   <li>Player can click on the duck which increases the score by 1</li>
-  <li></li>
+  <li>Classical music is featured</li>
   </ul>
   
   I will add more features as this game goes on.
