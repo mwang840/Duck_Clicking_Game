@@ -1,10 +1,10 @@
 # Duck_Clicking_Game
-A simple Duck Clicking Game that is made in unity. This is my first attempt of learning unity and making sprites move (major upgrade from Scratch)
+A simple Duck Clicking Game that is made in unity. This is my first attempt of learning unity and making sprites move 
 <h1>Features: </h1>
 <ul>
   <li>Ducks which spawn at (0, 0) and travel different speeds</li>
-  <li>Player can click on the duck which increases the score by 1</h1>
-  
+  <li>Player can click on the duck which increases the score by 1</li>
+  <li></li>
   </ul>
   
   I will add more features as this game goes on.
