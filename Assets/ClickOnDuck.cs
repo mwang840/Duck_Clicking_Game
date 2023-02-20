@@ -9,6 +9,8 @@ public class ClickOnDuck : MonoBehaviour, IPointerClickHandler
     [SerializeField] private float xSpeed;
     [SerializeField] private float ySpeed;
     [SerializeField] private ScoreCounter playerScore;
+    private HealthController health;
+    public int boundary = 20;
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -34,7 +36,9 @@ public class ClickOnDuck : MonoBehaviour, IPointerClickHandler
     // Start is called before the first frame update
     void Start()
     {
-        playerScore = GameObject.Find("Score").GetComponent<ScoreCounter>(); 
+        playerScore = GameObject.Find("Score").GetComponent<ScoreCounter>();
+        health = GameObject.Find("HealthController").GetComponent<HealthController>();
+
     }
     
 
@@ -45,5 +49,12 @@ public class ClickOnDuck : MonoBehaviour, IPointerClickHandler
         Vector3 velocity = new Vector3(xSpeed, ySpeed, 0);
         
         transform.Translate(velocity * Time.deltaTime);
+
+        if (transform.position.x > boundary || transform.position.x < -boundary || transform.position.y > boundary || transform.position.y < -boundary)
+        {
+            health.playerHealth--;
+            health.UpdateHealth();
+            Destroy(gameObject);
+        }
     }
 }
